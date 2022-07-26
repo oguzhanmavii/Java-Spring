@@ -1,0 +1,12 @@
+package springIntro;
+
+public class CustomerManager {
+	private ICustomerDal customerDal;
+    public CustomerManager(ICustomerDal customerDal) {
+		this.customerDal = customerDal;
+	}
+	public CustomerManager(CustomerDal customerDal2) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

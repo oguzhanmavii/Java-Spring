@@ -1,0 +1,11 @@
+package springIntro;
+
+import org.springframework.transaction.annotation.Transactional;
+
+public class MsSqlCustomerDal implements ICustomerDal{
+ @Override
+ @Transactional
+ public void add() {
+	  System.out.println("MsSql veritabanına eklendi");
+ }
+}

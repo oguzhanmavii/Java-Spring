@@ -1,0 +1,13 @@
+package springIntro;
+
+ public class CustomerManager{
+ private ICustomerDal customerDal;
+ //constructor injection
+ public CustomerManager(ICustomerDal customerDal) {
+	this.customerDal = customerDal;
+}
+public void add() {
+	
+	 customerDal.add();
+ }
+ }
